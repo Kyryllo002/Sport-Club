@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="exampl.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section class="hero">
+        <!-- Поле с названием клуба -->
+        <div class="club-name">
+            <h1>OK Sport Club</h1>
+            <p>Your wellness journey starts here.</p>
+        </div>
+    
+        <!-- Слайдер -->
+        <div class="hero-slider">
+            <!-- Слайд 1 -->
+            <div class="hero-slide" style="background-image: url('Images/client1.jpg');">
+                
+            </div>
+            <!-- Слайд 2 -->
+            <div class="hero-slide" style="background-image: url('Images/gallery4.jpg');">
+                
+            </div>
+            <!-- Слайд 3 -->
+            <div class="hero-slide" style="background-image: url('Images/client3.jpg');">
+                
+            </div>
+        </div>
+    
+        <!-- Индикаторы слайдов (если нужно) -->
+        <div class="slider-indicators">
+            <span class="current-slide">1</span> / <span class="total-slides">3</span>
+        </div>
+    </section>
+
+
+
+
+    
+    <section>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>123 Main Street, City, Country</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <p>+1 (123) 456-7890</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p>info@oksaltcave.com</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-user"></i>
+                <p>Trainer: Kyrylo Vynohradov</p>
+            </div>
+    </section>
+    <section>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>123 Main Street, City, Country</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <p>+1 (123) 456-7890</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p>info@oksaltcave.com</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-user"></i>
+                <p>Trainer: Kyrylo Vynohradov</p>
+            </div>
+    </section><section>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>123 Main Street, City, Country</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <p>+1 (123) 456-7890</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p>info@oksaltcave.com</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-user"></i>
+                <p>Trainer: Kyrylo Vynohradov</p>
+            </div>
+    </section><section>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>123 Main Street, City, Country</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <p>+1 (123) 456-7890</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p>info@oksaltcave.com</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-user"></i>
+                <p>Trainer: Kyrylo Vynohradov</p>
+            </div>
+    </section><section>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>123 Main Street, City, Country</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <p>+1 (123) 456-7890</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p>info@oksaltcave.com</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-user"></i>
+                <p>Trainer: Kyrylo Vynohradov</p>
+            </div>
+    </section><section>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>123 Main Street, City, Country</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <p>+1 (123) 456-7890</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p>info@oksaltcave.com</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-user"></i>
+                <p>Trainer: Kyrylo Vynohradov</p>
+            </div>
+    </section>
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll('.hero-slide');
+const totalSlides = slides.length;
+
+function showSlide(index) {
+    const offset = -index * 100; // Сдвигаем слайдер на 100% для каждого слайда
+    document.querySelector('.hero-slider').style.transform = `translateX(${offset}%)`;
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides; // Переход к следующему слайду
+    showSlide(currentSlide);
+}
+
+// Автопрокрутка слайдера каждые 7 секунд
+setInterval(nextSlide, 7000);
+
+// Эффект параллакса для всех слайдов
+window.addEventListener('scroll', () => {
+    const heroSlides = document.querySelectorAll('.hero-slide'); // Выбираем все слайды
+    const scrollPosition = window.scrollY; // Текущая позиция прокрутки
+
+    heroSlides.forEach((slide) => {
+        // Смещаем фон каждого слайда вниз на 30% от скорости прокрутки
+        slide.style.transform = `translateY(${scrollPosition * 0.3}px)`;
+    });
+});
+AOS.init();
+</script>
+</body>
+</html>

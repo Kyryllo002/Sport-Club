@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stretching - OK Salt Cave</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="OK Salt Cave Logo" id="logo">
+                </a>
+            </div>
+            <div class="header-right">
+                <nav class="nav-menu" id="nav-menu">
+                    <ul>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#gallery">Gallery</a></li>
+                        <li><a href="index.html#testimonials">Testimonials</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="booking.html" class="btn">Book Now</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main>
+        <!-- Секция Hero для Stretching -->
+        <section class="hero stretching-hero">
+            <div class="container">
+                <h1>Stretching Sessions</h1>
+                <p>Improve your flexibility, mobility, and overall well-being with our guided stretching sessions.</p>
+                <a href="booking.html" class="btn">Book Your Session</a>
+            </div>
+        </section>
+
+        <!-- Описание услуги -->
+        <section class="service-detail">
+            <div class="container">
+                <h2>What is Stretching?</h2>
+                <p>Stretching is a form of physical exercise that improves flexibility, mobility, and muscle elasticity. Our guided stretching sessions are designed to help you achieve better posture, reduce muscle tension, and enhance your overall physical performance.</p>
+                <div class="benefits">
+                    <h3>Benefits of Stretching</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Improves flexibility and range of motion.</li>
+                        <li><i class="fas fa-check"></i> Reduces muscle tension and soreness.</li>
+                        <li><i class="fas fa-check"></i> Enhances posture and alignment.</li>
+                        <li><i class="fas fa-check"></i> Promotes relaxation and stress relief.</li>
+                        <li><i class="fas fa-check"></i> Prepares your body for physical activity.</li>
+                    </ul>
+                </div>
+                <div class="gallery">
+                    <h3>Our Stretching Sessions</h3>
+                    <div class="gallery-grid">
+                        <img src="images/stretching1.jpg" alt="Stretching Image 1">
+                        <img src="images/stretching2.jpg" alt="Stretching Image 2">
+                        <img src="images/stretching3.jpg" alt="Stretching Image 3">
+                    </div>
+                </div>
+                <div class="booking-button">
+                    <a href="booking.html" class="btn">Book Your Session</a>
+                </div>
+            </div>
+        </section>
+        <!-- Контактная информация и карта -->
+<section class="contact-map-section">
+    <div class="container">
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>123 Main Street, City, Country</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <p>+1 (123) 456-7890</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p>info@oksaltcave.com</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-user"></i>
+                <p>Trainer: Kyrylo Vynohradov</p>
+            </div>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678901234567!2d-0.12345678901234567!3d51.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDA3JzI0LjQiTiAwwrAwNyczNy42Ilc!5e0!3m2!1sen!2suk!4v1234567890123!5m2!1sen!2suk"
+                width="100%"
+                height="400"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 OK Salt Cave. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://tiktok.com" target="_blank" aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        mobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        const header = document.getElementById('header');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

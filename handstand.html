@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handstand - OK Salt Cave</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <!-- HEADER (одинаковый везде) -->
+<header id="header">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="Images/Logo.png" alt="OK Sport Club" id="logo-light" class="logo-img">
+                <img src="Images/logo2.png" alt="OK Sport Club" id="logo-dark" class="logo-img hidden">
+            </a>
+        </div>
+
+        <div class="header-right">
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li> <!-- active для текущей страницы -->
+                    <li><a href="index.html#testimonials">Testimonials</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="booking.html" class="btn">Book Your Session</a>
+        </div>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</header>
+
+
+<!-- Для gallery.html, about.html и др. (просто фото) -->
+<section class="hero static-hero" style="background-image: url('Images/gallery2.jpg');"></section>
+
+
+
+
+        <!-- Описание услуги -->
+        <section class="service-detail">
+            <div class="container">
+                <h2>What is Handstand Training?</h2>
+                <p>Handstand training is a specialized program designed to help you master the art of balancing on your hands. Our sessions focus on building core strength, improving balance, and enhancing body control.</p>
+                <div class="benefits">
+                    <h3>Benefits of Handstand Training</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Improves core strength and stability.</li>
+                        <li><i class="fas fa-check"></i> Enhances balance and coordination.</li>
+                        <li><i class="fas fa-check"></i> Builds upper body and shoulder strength.</li>
+                        <li><i class="fas fa-check"></i> Boosts confidence and mental focus.</li>
+                        <li><i class="fas fa-check"></i> Fun and challenging way to stay fit.</li>
+                    </ul>
+                </div>
+                <div class="gallery">
+                    <h3>Our Handstand Sessions</h3>
+                    <div class="gallery-grid">
+                        <img src="Images/stretching-bg.jpg" alt="Handstand Image 1">
+                        <img src="images/gallery2.jpg" alt="Handstand Image 2">
+                        <img src="Images/gallery3.jpg" alt="Handstand Image 3">
+                    </div>
+                </div>
+                <div class="booking-button">
+                    <a href="booking.html" class="btn">Book Now</a>
+                </div>
+            </div>
+        </section>
+        <!-- Контактная информация и карта -->
+<section class="contact-map-section">
+    <div class="container">
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>123 Main Street, City, Country</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <p>+1 (123) 456-7890</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p>info@oksaltcave.com</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-user"></i>
+                <p>Trainer: Kyrylo Vynohradov</p>
+            </div>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678901234567!2d-0.12345678901234567!3d51.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDA3JzI0LjQiTiAwwrAwNyczNy42Ilc!5e0!3m2!1sen!2suk!4v1234567890123!5m2!1sen!2suk"
+                width="100%"
+                height="400"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 OK Salt Cave. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://tiktok.com" target="_blank" aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        mobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        const header = document.getElementById('header');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

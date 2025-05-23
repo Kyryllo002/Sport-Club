@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OK Sport Club - Gallery</title>
+    <link rel="stylesheet" href="common-hero.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</head>
+<body>
+    <!-- HEADER (одинаковый везде) -->
+<!-- HEADER (одинаковый везде) -->
+<header id="header">
+    <div class="header-container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="Images/Logo.png" alt="Logo" class="logo-img" id="logo-light">
+                <img src="Images/logo2.png" alt="Logo" class="logo-img hidden" id="logo-dark">
+            </a>
+        </div>
+
+        <div class="header-content">
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="index.html#testimonials">Testimonials</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="booking.html" class="header-btn">Book Session</a>
+        </div>
+
+        <button class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </div>
+</header>
+
+<!-- Для gallery.html, about.html и др. (просто фото) -->
+<section class="hero static-hero" style="background-image: url('Images/gallery4.jpg');"></section>
+
+    <!-- Фильтры -->
+    <section class="gallery-filters">
+        <div class="container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="training">Training</button>
+            <button class="filter-btn" data-filter="salt-room">Salt Room</button>
+            <button class="filter-btn" data-filter="events">Events</button>
+        </div>
+    </section>
+
+    <!-- Основная галерея -->
+    <section class="main-gallery">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Пример элемента с категорией -->
+                <div class="gallery-item" data-category="training">
+                    <img src="Images/client2.jpg" alt="Group Training">
+                    <div class="gallery-info">
+                        <h3>Morning Session</h3>
+                        <p>Group functional training</p>
+                        <div class="gallery-likes">
+                            <i class="far fa-heart"></i> 142
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Добавьте остальные 11 элементов (всего 12) -->
+                <div class="gallery-item" data-category="salt-room">
+                    <img src="Images/gallery4.jpg" alt="Salt Therapy">
+                    <div class="gallery-info">
+                        <h3>Relax Zone</h3>
+                        <p>Salt room session</p>
+                        <div class="gallery-likes">
+                            <i class="far fa-heart"></i> 89
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ... остальные изображения ... -->
+            </div>
+
+            <div class="load-more">
+                <button id="loadMore">Load More <i class="fas fa-arrow-down"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox для полноэкранного просмотра -->
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <span class="close-btn">&times;</span>
+            <img id="lightbox-img" src="" alt="">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- Footer (как на главной) -->
+    <footer>
+        <!-- Ваш текущий footer -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
